@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>grocery store raffle</title>
+    <style>
+      body {
+        background-color: #ece7ff;
+      }
+      h1 {
+        text-align: center;
+        color: #adaae6;
+      }
+      hr {
+        border: 1px solid #adaae6;
+      }
+      .intro {
+        float: left;
+        width: 300px;
+        margin-left: 200px;
+        margin-top: 145px;
+        border: 3px dashed #adaae6;
+        text-align: center;
+      }
+      .form {
+        float: right;
+        margin-right: 200px;
+        margin-top: 40px;
+      }
+      .field1 {
+        margin-top: 3%;
+        border: 2px dashed #ece7ff;
+        width: 275px;
+        background-color: #adaae6;
+      }
+      .field2 {
+        margin-top: 5%;
+        border: 2px dashed #ece7ff;
+        width: 300px;
+        background-color: #adaae6;
+      }
+      footer {
+        margin-top: 70%;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Friendly Grocers Raffle</h1>
+    <hr />
+
+    <div class="intro">
+      <h2>Enter for a chance to win!</h2>
+      <p>
+        Here at Friendly Grocers, we want to give back to our friends. Make sure
+        to hold on to your receipts and enter the information below for a chance
+        to win a $200 gift card here at your favorite local store. There are
+        multiple prizes availble, so enter to win!
+      </p>
+    </div>
+
+    <div class="form">
+      <form>
+        <fieldset class="field1">
+          <legend><b>Your Information</b></legend>
+          <label for="name">Full Name:</label>
+          <input type="text" name="fullname" id="name" required />
+          <br />
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+            id="email"
+            required
+          />
+          <br />
+          <label for="address">Address:</label>
+          <input
+            type="text"
+            name="street address"
+            id="address"
+            placeholder="12345 Imaginary Ave"
+          />
+          <br />
+          <label for="city">City/State:</label>
+          <input type="text" name="city" id="city" />
+          <br />
+          <label for="zipcode">Zip Code:</label>
+          <input type="number" name="zipcode" id="zipcode" />
+          <br />
+          <label for="contact">Phone Number:</label>
+          <input
+            type="number"
+            name="contact"
+            placeholder="(123)456-7890"
+            id="contact"
+            required
+          />
+        </fieldset>
+
+        <fieldset class="field2">
+          <legend><b>Why should we choose you?</b></legend>
+          <label for="review">Tell us about you.</label>
+          <br />
+          <textarea
+            name="review"
+            id="review"
+            rows="10"
+            cols="50"
+            wrap="hard"
+          ></textarea>
+        </fieldset>
+
+        <input
+          type="submit"
+          name="submit"
+          style="margin-left: 175px; margin-top: 5px; color: #adaae6"
+        />
+      </form>
+    </div>
+
+    <footer>Friendly Grocers &#183; Where we're <u>friendly</u>.</footer>
+  </body>
+</html>
